@@ -63,7 +63,12 @@
     .previous-research { margin-top:2.75rem; padding-top:2.25rem; border-top:1px solid var(--line); }
     .previous-research h3 { margin:0; color:var(--navy); font-size:1.3rem; } .previous-research p:last-child { margin: .55rem 0 0; color:var(--muted); }
     .publications { padding:5.5rem 0; background:#fff; }
-    .publication-note { max-width:800px; margin:1.25rem auto 0; color:var(--muted); font-size:1.05rem; }
+    .publication-section { margin-top:3rem; }
+    .publication-section h3 { margin-bottom:1.3rem; color:var(--navy); font-size:1.35rem; }
+    .publication-list { max-width:950px; margin:0; padding-left:1.6rem; }
+    .publication-list li { margin-bottom:1.5rem; color:#44566c; line-height:1.75; }
+    .publication-list strong { color:var(--ink); }
+    .publication-type { display:inline-block; margin-left:.5rem; padding:.1rem .45rem; border:1px solid var(--line); color:var(--muted); font-size:.78rem; }
     .career { padding:5.5rem 0; background:var(--paper); }
     .career-header { margin-bottom:2rem; }
     .cv-actions { display:flex; justify-content:flex-end; margin:0 0 1.25rem; }
@@ -165,9 +170,32 @@
       </div>
     </section>
     <section class="page-panel publications" id="publications" aria-labelledby="publications-title" hidden>
-      <div class="container">
+      <div class="container content-grid">
         <h2 id="publications-title">Publications</h2>
-        <p class="publication-note">A full list of publications will be added here.</p>
+        <p class="intro">Selected peer-reviewed publications and conference proceedings. A complete record is available on <a href="https://scholar.google.com/citations?user=QAPF3U4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
+        <div class="publication-section">
+          <h3>First-author Publications</h3>
+          <ol class="publication-list">
+          <li><strong>T. Sekine</strong>, A. Yamanaka, T. Eda, and M. Busto, “<a href="https://www.researchgate.net/publication/388570805_Verification_of_the_Onboard_SAR_Ship_Detection_using_YOLO" target="_blank" rel="noopener noreferrer"><em>Verification of the onboard SAR ship detection using YOLO.</em></a>” International Astronautical Congress 2024, Milan, Italy.</li>
+          <li><strong>T. Sekine</strong>, A. Yamanaka, T. Eda, and M. Busto, “<a href="https://ieeexplore.ieee.org/document/10641093/" target="_blank" rel="noopener noreferrer"><em>A GAN-based SAR-Optical Data Fusion Approach For Enhanced Flood Mapping.</em></a>” IGARSS 2024 – 2024 IEEE International Geoscience and Remote Sensing Symposium, Athens, Greece.</li>
+          <li><strong>T. Sekine</strong> and K. Sasaki, “<em>Detection of harmful algal blooms in the Gulf of Mexico from Satellogic hyperspectral satellite imagery.</em>” International Astronautical Congress 2023, Baku, Azerbaijan.</li>
+          <li><strong>T. Sekine</strong> and K. Sasaki, “<em>Detection of the collapsed buildings in Turkey from multi-sensor very high resolution satellite images.</em>” International Astronautical Congress 2023, Baku, Azerbaijan.</li>
+          <li><strong>T. Sekine</strong> and K. Sasaki, “<a href="https://ieeexplore.ieee.org/document/9884402" target="_blank" rel="noopener noreferrer"><em>Monitoring Coastal Marine Debris Using High-Resolution Satellite Image Time Series.</em></a>” IGARSS 2022 – 2022 IEEE International Geoscience and Remote Sensing Symposium, Kuala Lumpur, Malaysia, 2022, pp. 2335–2338, doi: 10.1109/IGARSS46834.2022.9884402.</li>
+          </ol>
+        </div>
+        <div class="publication-section">
+          <h3>Co-authored Publications</h3>
+          <ol class="publication-list">
+          <li>K. Sasaki, <strong>T. Sekine</strong>, and W. J. Emery, “<a href="https://ieeexplore.ieee.org/document/10430395" target="_blank" rel="noopener noreferrer"><em>Enhancing the Detection of Coastal Marine Debris in Very High-Resolution Satellite Imagery via Unsupervised Domain Adaptation.</em></a>” <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, vol. 17, pp. 6014–6028, 2024, doi: 10.1109/JSTARS.2024.3364165.</li>
+          <li>K. Sasaki, <strong>T. Sekine</strong>, L.-J. Burtz and W. J. Emery, “<a href="https://ieeexplore.ieee.org/document/9841087" target="_blank" rel="noopener noreferrer"><em>Coastal Marine Debris Detection and Density Mapping With Very High Resolution Satellite Imagery.</em></a>” <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, vol. 15, pp. 6391–6401, 2022, doi: 10.1109/JSTARS.2022.3193993.</li>
+          <li>T. Eda, <strong>T. Sekine</strong>, and M. Busto, “<a href="https://ieeexplore.ieee.org/document/10642771?denied=" target="_blank" rel="noopener noreferrer"><em>Case-Study: Two-phase AI Prediction For Onboard Synthetic Aperture Radar Data Processing.</em></a>” IGARSS 2024 – 2024 IEEE International Geoscience and Remote Sensing Symposium, Athens, Greece.</li>
+          <li>K. Sasaki, <strong>T. Sekine</strong>, and W. Emery, “<em>Large Scale Coastal Marine Debris Monitoring in the Coast of Japan islands using Satellite and Drone observations.</em>” International Astronautical Congress 2022, Paris, France, 2022, IAC-22B1.IP.x73154.</li>
+          <li>K. Sasaki, L.-J. Burtz, <strong>T. Sekine</strong>, and M. Yoshioka, “<em>Time Series Monitoring of the 2020 Mauritius Oil Spill with Synthetic Aperture Radar Satellite Imagery.</em>” International Astronautical Congress 2021, Dubai, United Arab Emirates, 2021, IAC-21-B1.4.1.</li>
+          <li>K. Sasaki, <strong>T. Sekine</strong>, and L.-J. Burtz, “<a href="https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=4991&amp;context=smallsat" target="_blank" rel="noopener noreferrer"><em>Coastal marine debris mapping using multi-modal feature extraction pipeline.</em></a>” 35th Annual AIAA/USU Conference on Small Satellites, SSC21-S1-33, Aug. 2021.</li>
+          <li>K. Sasaki, W. Emery, <strong>T. Sekine</strong>, L.-J. Burtz and Y. Kudo, “<a href="https://ieeexplore.ieee.org/document/9554203" target="_blank" rel="noopener noreferrer"><em>Coastal Marine Debris Density Mapping using a Segmentation Analysis of High-Resolution Satellite Imagery.</em></a>” 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 7505–7508.</li>
+          <li>P. Agostini et al., “<a href="https://iopscience.iop.org/article/10.1088/1361-6471/abf3ba" target="_blank" rel="noopener noreferrer"><em>The Large Hadron-Electron Collider at the HL-LHC.</em></a>” <em>Journal of Physics G: Nuclear and Particle Physics</em>, vol. 48, no. 11, 2021, doi: 10.1088/1361-6471/abf3ba.</li>
+          </ol>
+        </div>
       </div>
     </section>
     <section class="page-panel career" id="cv" aria-labelledby="cv-title" hidden>
