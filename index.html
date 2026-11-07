@@ -59,9 +59,14 @@
     h2 { margin:0; color:var(--navy); font-size:clamp(2rem,4vw,2.85rem); line-height:1.16; letter-spacing:-.025em; }
     .intro { margin:1.5rem 0 0; color:#34465c; font-size:1.08rem; }
     .focus-list { display:grid; gap:4rem; margin:3.5rem 0 0; }
-    .focus { padding:0; } .focus h3 { margin:0 0 .65rem; color:var(--navy); font-size:1.18rem; } .focus p { max-width:880px; margin:0; color:var(--muted); font-size:.94rem; } .project-link,.back-link { display:inline-block; margin-top:1rem; color:var(--blue); font-size:.94rem; font-weight:750; text-decoration:none; } .project-link:hover,.back-link:hover { color:var(--navy); }
+    .focus { padding:0; } .focus h3 { margin:0; color:var(--navy); font-size:1.18rem; text-transform:uppercase; } .research-label { margin:.15rem 0 .65rem; color:var(--blue); font-size:.84rem; font-weight:750; text-transform:uppercase; letter-spacing:.06em; } .focus p { max-width:880px; margin:0; color:var(--muted); font-size:.94rem; } .project-link,.back-link { display:inline-block; margin-top:1rem; color:var(--blue); font-size:.94rem; font-weight:750; text-decoration:none; } .project-link:hover,.back-link:hover { color:var(--navy); }
     .previous-research { margin-top:2.75rem; padding-top:2.25rem; border-top:1px solid var(--line); }
     .previous-research h3 { margin:0; color:var(--navy); font-size:1.3rem; } .previous-research p:last-child { margin: .55rem 0 0; color:var(--muted); }
+    .project-section { max-width:880px; margin:2.2rem 0 0; }
+    .project-section h3 { margin:0 0 .65rem; color:var(--navy); font-size:1.3rem; }
+    .project-section p { margin:.8rem 0 0; color:var(--muted); }
+    .project-references { max-width:880px; margin:2rem 0 0; display:grid; gap:.65rem; } .project-references p { margin:0; color:var(--muted); font-size:.9rem; }
+    .project-figure { max-width:1000px; margin:2.5rem 0 0; } .project-figure img { display:block; width:100%; border:1px solid var(--line); } .project-figure figcaption { margin-top:.6rem; color:var(--muted); font-size:.85rem; }
     .publications { padding:5.5rem 0; background:#fff; }
     .publication-section { margin-top:3rem; }
     .publication-section h3 { margin-bottom:1.3rem; color:var(--navy); font-size:1.35rem; }
@@ -138,12 +143,12 @@
     <section class="page-panel" id="research" aria-labelledby="research-title" hidden>
     <div class="container content-grid">
       <div>
-        <h2 id="research-title">Research projects</h2>
-        <p class="intro">My research spans high-redshift quasar surveys with Euclid, satellite remote-sensing data analysis, and machine-learning searches for new physics at the Large Hadron Collider.</p>
+        <h2 id="research-title">Research</h2>
+        <p class="intro">I am currently working on discovery of high-redshift quasars, rapidly accreting supermassive black holes. Upcoming and ongoing large-scale surveys such as Euclid, Nancy Grace Roman Space Telescope, and the Vera C. Rubin Observatory will produce enormous volumes of data, and my research especially focuses on identifying rare sources using deep learning-based anomaly detection. My previous experience in satellite image analysis and high-energy particle-collision data analysis helps me explore large-scale scientific datasets.</p>
         <div class="focus-list" aria-label="Research interests">
-          <article class="focus"><h3>EUCLID HIGH-REDSHIFT QUASARS SURVEY</h3><p>Distant quasars are important for understanding the growth of supermassive black holes and their host galaxies in the early Universe. The Euclid space telescope has already discovered tens of new quasars, primarily using supervised machine learning methods. However, these approaches may miss unusual types of quasars because the training data are biased toward Type I quasars. I am developing self-supervised machine learning approaches for more comprehensive quasar discovery.</p><a class="project-link" href="#euclid-details">More detailed →</a></article>
-          <article class="focus"><h3>SATELLITE REMOTE SENSING DATA ANALYSIS</h3><p>Satellite remote sensing is observing the Earth surface from satellites by measuring electromagnetic radiation. Today, a large number of Earth-observing satellites are in orbit, enabling near-real-time monitoring of our planet. As a data scientist, I worked on several projects, including environmental monitoring and natural-disaster assessment. My research focused on reducing domain gaps between different satellite sensors and on multi-wavelength data fusion, combining optical and near-infrared observations with radio-wave data.</p><a class="project-link" href="#remote-sensing-details">More detailed →</a></article>
-          <article class="focus"><h3>SEARCH FOR NEW PHYSICS WITH THE LHC</h3><p>Standard Model is a well-established theory that describes elementary particles and their interactions. However, it cannot explain several observed phenomena, suggesting that new particles may exist beyond the Standard Model (BSM). At CERN, the Large Hadron Collider searches for such new physics by colliding protons at high energies (TeV scale) and analyzing enormous amounts of collision data. During my master’s degree, I worked on searches for BSM particles using simulation data and machine learning methods, including decision-tree-based models and recurrent neural networks.</p><a class="project-link" href="#lhc-details">More detailed →</a></article>
+          <article class="focus"><h3>High-Redshift Quasar Survey</h3><p class="research-label">PhD research</p><p>Distant quasars are important for understanding the growth of supermassive black holes and their host galaxies in the early Universe. The Euclid space telescope has already discovered tens of new quasars, primarily using supervised machine learning methods. However, these approaches may miss unusual types of quasars because the training data are biased toward Type I quasars. I am developing self-supervised machine learning approaches for more comprehensive quasar discovery.</p><a class="project-link" href="#euclid-details">More detailed →</a></article>
+          <article class="focus"><h3>Satellite Remote Sensing</h3><p class="research-label">Research in Industry</p><p>Satellite remote sensing is observing the Earth surface from satellites by measuring electromagnetic radiation. Today, a large number of Earth-observing satellites are in orbit, enabling near-real-time monitoring of our planet. As a data scientist, I worked on several projects, including environmental monitoring and natural-disaster assessment. My research focused on reducing domain gaps between different satellite sensors and on multi-wavelength data fusion, combining optical and near-infrared observations with radio-wave data.</p><a class="project-link" href="#remote-sensing-details">More detailed →</a></article>
+          <article class="focus"><h3>LHC experiment</h3><p class="research-label">Master’s thesis</p><p>Standard Model is a well-established theory that describes elementary particles and their interactions. However, it cannot explain several observed phenomena, suggesting that new particles may exist beyond the Standard Model (BSM). At CERN, the Large Hadron Collider searches for such new physics by colliding protons at high energies (TeV scale) and analyzing enormous amounts of collision data. During my master’s degree, I worked on searches for BSM particles using simulation data and machine learning methods, including decision-tree-based models and recurrent neural networks.</p><a class="project-link" href="#lhc-details">More detailed →</a></article>
         </div>
       </div>
     </div>
@@ -157,8 +162,23 @@
     </section>
     <section class="page-panel project-detail" id="remote-sensing-details" aria-labelledby="remote-sensing-details-title" hidden>
       <div class="container content-grid">
-        <h2 id="remote-sensing-details-title">SATELLITE REMOTE SENSING DATA ANALYSIS</h2>
-        <p class="intro">A detailed project description will be added here.</p>
+        <h2 id="remote-sensing-details-title">COASTAL MARINE DEBRIS MONITORING</h2>
+
+        <p class="intro">Coastal marine debris poses a serious environmental threat, and hence it is important to monitor its accumulation regularly. However, manual beach surveys are labor-intensive and too spatially sparse to support large-scale monitoring. As a scalable alternative, we developed a marine debris monitoring system using very high-resolution satellite imagery paired with in-situ clean-up records from the Japanese coastline.
+
+To automatically extract beach areas, we trained a U-Net segmentation model to classify each pixel into nine classes: vegetation, trees, buildings, man-made structures, roads, water, sand, rocks, and others. We then found that Shannon entropy computed from the multispectral reflectance within each segment was a strong indicator of debris presence. A classifier based on this feature achieved approximately 88% accuracy and showed strong correlation with ground-based clean-up volumes, demonstrating the potential of entropy as a scalable method estimating for marine debris density.</p>
+        <p class="intro">This entropy-based method was originally developed for very high-resolution WorldView imagery, whose low revisit frequency limits the temporal resolution of coastal monitoring. To extend the approach to satellite sensors with more frequent revisit times but lower spatial resolution, we developed a CycleGAN-based unsupervised domain adaptation framework that translates imagery from these sensors into the radiometric domain of the WorldView data, without requiring additional labeled samples. The adapted pipeline was successfully applied to a different coastal region, where it reproduced the same entropy-based response to marine debris and enabled substantially more frequent monitoring, increasing the achievable observation cadence from approximately monthly to weekly or even daily.</p>
+        <figure class="project-figure">
+          <img src="documents/marine_debris.png" alt="Pipeline diagram: WorldView, SkySat, and Pleiades imagery are preprocessed, passed through a CycleGAN-based generator/discriminator for style transfer between source and target sensor domains, used to train a U-Net segmentation model, then beach scenes are reduced to a region of interest before computing entropy.">
+          <figcaption>Domain-adaptation pipeline: sensor-domain style transfer (CycleGAN) feeding a U-Net segmentation model, followed by RoI extraction and entropy calculation on beach scenes.</figcaption>
+        </figure>
+
+        <div class="project-references">
+          <p>K. Sasaki, T. Sekine, L.-J. Burtz, and W. J. Emery, “Coastal Marine Debris Detection and Density Mapping With Very High Resolution Satellite Imagery,” <em>IEEE JSTARS</em>, vol. 15, pp. 6391–6401, 2022.</p>
+          <p>O. Ronneberger, P. Fischer, and T. Brox, “<a href="https://arxiv.org/abs/1505.04597" target="_blank" rel="noopener noreferrer">U-Net: Convolutional Networks for Biomedical Image Segmentation.</a>” arXiv:1505.04597, 2015.</p>
+          <p>K. Sasaki, T. Sekine, and W. J. Emery, “Enhancing the Detection of Coastal Marine Debris in Very High-Resolution Satellite Imagery via Unsupervised Domain Adaptation,” <em>IEEE JSTARS</em>, vol. 17, pp. 6014–6028, 2024.</p>
+          <p>J.-Y. Zhu, T. Park, P. Isola, and A. A. Efros, “<a href="https://arxiv.org/abs/1703.10593" target="_blank" rel="noopener noreferrer">Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks.</a>” arXiv:1703.10593, 2017.</p>
+        </div>
         <a class="back-link" href="#research">← Back to research projects</a>
       </div>
     </section>
